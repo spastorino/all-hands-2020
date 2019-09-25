@@ -1,4 +1,4 @@
-# Rust meetup template
+# Rust All Hands 2020
 
 This is a [Jekyll][jekyll] template for a Rust-oriented meetup. It's based on the
 [rust-cologne][rustcgn] website.
