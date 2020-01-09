@@ -10,41 +10,18 @@ header-variant: start-page
 {% assign further_down_the_line = next_meetups | shift %}
 
 <div class="page-home" role="main">
-  <section class="next-meetup">
-  {% if next_meetup %}
-    <p class="section-headline">Next</p>
-    <article class="event is-next-meetup">
-      {% if next_meetup.talks != false %}
-        {% include event.html event=next_meetup skip_date=true call_for_talks=true show_abstracts=false %}
-      {% else %}
-        {% include event.html event=next_meetup skip_date=true call_for_talks=false %}
-      {% endif %}
-    </article>
-  {% else %}
-    <h1>
-      We are currently planning our next meetup!
-    </h1>
-    <p>
-      <a href="{{ site.feedback_url }}">
-        Help us!
-      </a>
-    </p>
-  {% endif %}
-  </section>
+  <section class="next-meetups">
+    <p class="section-headline">Blog posts</p>
+    <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  {% if further_down_the_line.size > 0 %}
-  <section class="future-meetups">
-    <p class="section-headline">Upcoming</p>
-    {% for event in further_down_the_line %}  
-      {% include event-inline.html event=event %}
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+      </li>
     {% endfor %}
+    </ul>
   </section>
-  {% endif %}
-
-  {% if prev_meetup %}
-  <section class="prev-meetup">
-    <p class="section-headline">Previous</p>
-    {% include event-inline.html event=prev_meetup %}
-  </section>
-  {% endif %}
 </div>
