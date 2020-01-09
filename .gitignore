@@ -1,17 +1,2 @@
-_site
-.sass-cache
-
-# Editor Stuff
-*.sublime-project
-*.bak
+book
 *~
-
-# System stuff
-.DS_Store
-.Spotlight-V100
-.Trashes
-Thumbs.db
-ehthumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-.directory
