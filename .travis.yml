@@ -4,6 +4,11 @@ sudo: false
 cache:
   - cargo
 
+env:
+  RUSTINFRA_DEPLOY_DIR: book
+import:
+  - lang/simpleinfra/travis-configs/static-websites.yml
+
 rust:
   - stable
 
@@ -14,12 +19,3 @@ before_script:
 
 script:
   - mdbook build && mdbook test
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: book
-  keep-history: false
-  on:
-    branch: master
