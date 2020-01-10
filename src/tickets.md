@@ -6,8 +6,8 @@ covered, and we’re also aware that many of the people attending do
 have an employer who would be able and willing to cover the price of a
 ticket. Therefore, we’ve opted for the following setup.
 
-When registering, you will be asked to select one of the following
-choices:
+When registering, you will be asked to answer the following two
+questions. Note that you are welcome to respond "yes" to both.
 
 - **Do you need your flights + hotel to be sponsored?** 
 - **Do you need your event ticket sponsored?**
