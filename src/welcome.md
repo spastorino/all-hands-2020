@@ -19,7 +19,9 @@ of the All Hands will vary, but that's the idea.
 
 ## Am I eligible to attend?
 
-Check out the [eligibility] web page for details on that.
+The Rust All Hands is an "invite only" event, but we do try to take an
+inclusive stance on who can attend. Check out the [eligibility] web
+page for details on that.
 
 [eligibility]: ./eligibility.html
 
