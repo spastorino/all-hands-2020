@@ -12,20 +12,19 @@ Greece
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0761271769256!2d22.955177215835537!3d40.628203079341155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838fe0b32e959%3A0xa9c81b906d8cd134!2sEgnatia%20156%2C%20Thessaloniki%20546%2036%2C%20Greece!5e0!3m2!1sen!2sde!4v1578773528689!5m2!1sen!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 ## Hotel Recommendations
+
 UoM has provided attendees with a list of hotels, that can be booked with their
 corporate rate.
 
-**IMPORTANT NOTE** We're still in the process of setting up the discount code
-for members with hotels. This information will be sent to members
-once available.
+**DISCOUNT CODE:** ALL HANDS
 
 ### Hotel ABC
 
 - **Website:** [hotelabc.gr](https://hotelabc.gr)
 - **Address:** Aggelaki str. 41
 - **Price (per night):**
-  - Single bed: €59
-  - Double bed: €76
+  - Single bed: €56
+  - Double bed: €72
 - **Details:**
   - Greek buffet breakfast
   - Free WiFi
@@ -63,20 +62,18 @@ once available.
 - **Commute:**
   - 2 minutes from bus stop.
 
-### Electra Palace
+### Colors Thess Living
 
-- **Website:** [http://electra-palace.thessaloniki.top-hotels-gr.com/el](http://electra-palace.thessaloniki.top-hotels-gr.com/el/)
-- **Address:** Aristotelous Square 9
+- **Website:** [colors.com.gr](https://colors.com.gr/)
+- **Address:** Valaoritou Str. 21
 - **Price (per night):**
-  - Single bed: €110
-  - Double bed: €130
+  - Single bed: €70
+  - Double bed: €75
 - **Details:**
-- Free WiFi
-- NOVA Satellite TV
-- Gym & external pool
-- Tea/Coffee in all rooms
-**Commute:**
+  - +€5 breakfast
+- **Commute:**
   - 1 minute from bus stop.
+  - 20 minutes from university.
 
 ## Location Photos
 
