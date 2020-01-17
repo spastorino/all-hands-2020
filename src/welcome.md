@@ -3,11 +3,6 @@
 Welcome to the webpage for the Rust All Hands 2020! This site should
 contain all the information you need about the event.
 
-## WARNING
-
-As of this moment, all the material on this site is a **work in
-progess**. We should be opening it up for public consumption soon!
-
 ## What is the Rust All Hands?
 
 The Rust All Hands is an annual event where Rust team members and
@@ -17,6 +12,16 @@ tricky implementation problems, and to make plans for the remainder of
 the year. The details of how each Rust team or working group makes use
 of the All Hands will vary, but that's the idea.
 
+## When and where is the Rust All Hands?
+
+This year the all hands event will be hosted by the [University of
+Macedonia][uom] in **Thessaloniki, Greece** from the **16th to 20th** of March
+2020. See our [location page] for further information as well as
+hotel recommendations.
+
+[uom]: https://www.uom.gr/en
+[location page]: ./location.html
+
 ## Am I eligible to attend?
 
 The Rust All Hands is an "invite only" event, but we do try to take an
@@ -25,9 +30,7 @@ page for details on that.
 
 [eligibility]: ./eligibility.html
 
-## What should I be doing to attend?
-
-
 ## More questions?
 
-Check out the [Frequently Asked Questions](./faq.md).
+Check out the [Frequently Asked Questions](./faq.md) page for
+further information.
