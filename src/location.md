@@ -13,8 +13,10 @@ Greece
 
 ## Hotel Recommendations
 
-UoM has provided attendees with a list of hotels, that can be booked with their
-corporate rate.
+[UoM] has provided attendees with a list of hotels, that can be booked with their
+corporate rate. **Note** Some people have said they have found some of the
+hotels with cheaper listings through booking portals. Be sure to try and find
+the cheapest and most convenient option for you.
 
 **DISCOUNT CODE:** ALL HANDS
 
