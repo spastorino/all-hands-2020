@@ -9,7 +9,7 @@ ticket. Therefore, we’ve opted for the following setup.
 When registering, you will be asked to answer the following two
 questions. Note that you are welcome to respond "yes" to both.
 
-- **Do you need your flights + hotel to be sponsored?**
+- **Do you need your flights + hotel sponsored?**
 - **Do you need your event ticket sponsored?**
 
 Please feel free to request sponsorship as necessary. However, if your
@@ -21,7 +21,7 @@ to bring someone along, and see the FAQ as well.
 
 - **“Individual” ticket: 500€.** A “individual” ticket covers roughly the cost for a single person to attend the all hands, including catering and venue.
 - **“Solidarity” ticket:** **1000€.** A “solidarity” ticket is a lightweight form of sponsorship. It covers the cost for yourself and then sponsors the cost of one other ticket.
-- “**Sponsorship” ticket: 5000€.** A “sponsorship” ticket covers the cost for yourself as well as nine other people. If your company is interested in purchasing one of these tickets, reach out to the event organizers.
+- **“Sponsorship” ticket: 5000€.** A “sponsorship” ticket covers the cost for yourself as well as nine other people. If your company is interested in purchasing one of these tickets, reach out to the event organizers.
     - Sponsoring companies will be publicly acknowledged in a blog post and thanked during and after the event.
 
 ## Sponsorship
@@ -33,4 +33,3 @@ details.
   attending, can they still sponsor the event?*
 
 Yes, attendance is not a requirement for sponsorship.
-

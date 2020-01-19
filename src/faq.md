@@ -7,11 +7,11 @@ See the [Eligibility](./eligibility.html) page for all the details.
 ## I am eligible to attend the event. What should I be doing?
 
 Presuming you are eligible to attend the event, you should be
-following the steps listed in the [Registration] page.
+following the steps listed in the [Registration](./registration.html) page.
 
 ## Can any company purchase a sponsorship ticket?
 
-All tickets — including sponsorship tickets — are only available for purchase to folks elegible to attend the All Hands anyway (see the previous question). Sponsors should reach out to <rust-all-hands@rust-lang.org> before purchasing tickets as well.
+All tickets — including sponsorship tickets — are only available for purchase to folks eligible to attend the All Hands anyway (see the previous question). Sponsors should reach out to <rust-all-hands@rust-lang.org> before purchasing tickets as well.
 
 ## Does the sponsorship ticket include entrance to the event?
 
@@ -39,5 +39,4 @@ from amongst a few other candidates.
 
 ## Where can I address other questions?
 
-Feel free to send e-mail to <rust-all-hands@rust-lang.org>.
-
+Feel free to send an e-mail to <rust-all-hands@rust-lang.org>.

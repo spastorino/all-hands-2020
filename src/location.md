@@ -94,6 +94,6 @@ Image by [Dimitris Vetsikas][dimitris-vetsikas]
 
 Image by [Dimitris Vetsikas][dimitris-vetsikas]
 
-[emilia-babalau-maghiar]: (https://pixabay.com/users/emiliamaghiar-2470335/)
+[emilia-babalau-maghiar]: https://pixabay.com/users/emiliamaghiar-2470335/
 [dimitris-vetsikas]: https://pixabay.com/users/dimitrisvetsikas1969-1857980/
 [uom]: https://www.uom.gr/en

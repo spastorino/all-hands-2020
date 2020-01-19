@@ -24,7 +24,7 @@ hotel recommendations.
 
 ## Am I eligible to attend?
 
-The Rust All Hands is an "invite only" event, but we do try to take an
+The Rust All Hands is an invitation-only event, but we do try to take an
 inclusive stance on who can attend. Check out the [eligibility] web
 page for details on that.
 
