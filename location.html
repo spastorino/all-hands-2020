@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Dates and location - Rust All Hands 2020</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded "><a href="welcome.html"><strong aria-hidden="true">1.</strong> Welcome</a></li><li class="expanded "><a href="location.html" class="active"><strong aria-hidden="true">2.</strong> Dates and location</a></li><li class="expanded "><a href="eligibility.html"><strong aria-hidden="true">3.</strong> Eligibility</a></li><li class="expanded "><a href="registration.html"><strong aria-hidden="true">4.</strong> Registration</a></li><li class="expanded "><a href="tickets.html"><strong aria-hidden="true">5.</strong> Tickets and sponsorship</a></li><li class="expanded "><a href="faq.html"><strong aria-hidden="true">6.</strong> Frequently Asked Questions</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Rust All Hands 2020</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#dates-and-location" id="dates-and-location">Dates and location</a></h1>
+<p>The Rust All Hands 2020 will be taking place between <strong>March 16th-20th</strong> at the
+<a href="https://www.uom.gr/en">University of Macedonia</a> in Thessaloníki, Greece.</p>
+<h2><a class="header" href="#venue-location" id="venue-location">Venue Location</a></h2>
+<p>156 Egnatia Street,<br>
+GR-546 36 Thessaloniki,<br>
+Greece</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.0761271769256!2d22.955177215835537!3d40.628203079341155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838fe0b32e959%3A0xa9c81b906d8cd134!2sEgnatia%20156%2C%20Thessaloniki%20546%2036%2C%20Greece!5e0!3m2!1sen!2sde!4v1578773528689!5m2!1sen!2sde" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<h2><a class="header" href="#hotel-recommendations" id="hotel-recommendations">Hotel Recommendations</a></h2>
+<p><a href="https://www.uom.gr/en">UoM</a> has provided attendees with a list of hotels, that can be booked with their
+corporate rate. <strong>Note</strong> Some people have said they have found some of the
+hotels with cheaper listings through booking portals. Be sure to try and find
+the cheapest and most convenient option for you.</p>
+<p><strong>DISCOUNT CODE:</strong> ALL HANDS</p>
+<h3><a class="header" href="#hotel-abc" id="hotel-abc">Hotel ABC</a></h3>
+<ul>
+<li><strong>Website:</strong> <a href="https://hotelabc.gr">hotelabc.gr</a></li>
+<li><strong>Address:</strong> Aggelaki str. 41</li>
+<li><strong>Price (per night):</strong>
+<ul>
+<li>Single bed: €56</li>
+<li>Double bed: €72</li>
+</ul>
+</li>
+<li><strong>Details:</strong>
+<ul>
+<li>Greek buffet breakfast</li>
+<li>Free WiFi</li>
+</ul>
+</li>
+<li><strong>Commute:</strong>
+<ul>
+<li>1 minute from Bus stop.</li>
+<li>8 minutes walking distance to/from University.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#metropolitan-hotel" id="metropolitan-hotel">Metropolitan Hotel</a></h3>
+<ul>
+<li><strong>Website:</strong> <a href="https://www.metropolitan.gr">www.metropolitan.gr</a></li>
+<li><strong>Address:</strong> Vas. Olgas Ave. 65</li>
+<li><strong>Price (per night):</strong>
+<ul>
+<li>Single bed: €60</li>
+<li>Double bed: €70</li>
+</ul>
+</li>
+<li><strong>Details:</strong>
+<ul>
+<li>Greek buffet breakfast</li>
+<li>Room tax (€3 a day)</li>
+<li>Free WiFi</li>
+</ul>
+</li>
+<li><strong>Commute:</strong>
+<ul>
+<li>1 minute from bus stop.</li>
+<li>8 minutes walking distance to/from University.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#Μediterranean-palace-hotel" id="Μediterranean-palace-hotel">Μediterranean Palace Hotel</a></h3>
+<ul>
+<li><strong>Website:</strong> <a href="https://www.mediterranean-palace.gr">www.mediterranean-palace.gr</a></li>
+<li><strong>Address:</strong> Salaminos &amp; Karatassou str. 3</li>
+<li><strong>Price (per night):</strong>
+<ul>
+<li>Single bed: €100</li>
+<li>Double bed: €110</li>
+</ul>
+</li>
+<li><strong>Details:</strong>
+<ul>
+<li>Greek buffet breakfast</li>
+<li>Free outdoor parking</li>
+<li>Indoor parking (€10/day)</li>
+<li>Free WiFi</li>
+</ul>
+</li>
+<li><strong>Commute:</strong>
+<ul>
+<li>2 minutes from bus stop.</li>
+</ul>
+</li>
+</ul>
+<h3><a class="header" href="#colors-thess-living" id="colors-thess-living">Colors Thess Living</a></h3>
+<ul>
+<li><strong>Website:</strong> <a href="https://colors.com.gr/">colors.com.gr</a></li>
+<li><strong>Address:</strong> Valaoritou Str. 21</li>
+<li><strong>Price (per night):</strong>
+<ul>
+<li>Single bed: €70</li>
+<li>Double bed: €75</li>
+</ul>
+</li>
+<li><strong>Details:</strong>
+<ul>
+<li>+€5 breakfast</li>
+</ul>
+</li>
+<li><strong>Commute:</strong>
+<ul>
+<li>1 minute from bus stop.</li>
+<li>20 minutes from university.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="header" href="#location-photos" id="location-photos">Location Photos</a></h2>
+<p><img src="images/white-tower.jpg" alt="A daytime picture of the White Tower Of Thessaloniki." />
+Image by <a href="https://pixabay.com/users/emiliamaghiar-2470335/">Emilia Babalau-Maghiar</a></p>
+<p><img src="images/afternoon-sea.jpg" alt="A late afternoon photo of the sea with a couple at an ice cream stand." /></p>
+<p>Image by <a href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/">Dimitris Vetsikas</a></p>
+<p><img src="images/catacombs.jpg" alt="A picture of a what appears to be a well inside one of the catacombs." /></p>
+<p>Image by <a href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/">Dimitris Vetsikas</a></p>
+<p><img src="images/buildings.jpg" alt="A view of the buildings along the coast of Thessaloniki" /></p>
+<p>Image by <a href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/">Dimitris Vetsikas</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="welcome.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="eligibility.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="welcome.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="eligibility.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
