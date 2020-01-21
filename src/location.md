@@ -47,7 +47,6 @@ the cheapest and most convenient option for you.
   - Free WiFi
 - **Commute:**
   - 1 minute from bus stop.
-  - 8 minutes walking distance to/from University.
 
 ### Μediterranean Palace Hotel
 
