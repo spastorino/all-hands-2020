@@ -11,6 +11,7 @@ Check out the page on [eligibility](./eligibility.html) for all the details.
   * If you will need your ticket refunded, please mention that in the
     e-mail, and be sure to include the full receipt. We'll be in touch
     with you.
-* If you are able, purchase tickets ([more info on tickets here](./tickets.html))
+* Purchase tickets ([more info on tickets here](./tickets.html))
+  * If you have requested sponsorship from us, you are not required to buy a ticket.
 * That's it, you're done!
 
